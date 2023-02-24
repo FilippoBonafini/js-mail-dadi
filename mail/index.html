@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
     <!-- IMPORTAZIONE MY CSS  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- IMPORTAZIONE FA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -19,21 +21,26 @@
     <div id="intoccabile" class="hidden"></div>
 
     <div class="appContainer">
-        <form action="/" method="post">
-            <input type="email" id="mailUser">
+        <form action="/" method="post" class="formVerify">
+            <h2>Verifica presenza nel database:</h2>
+            <input type="email" id="mailUser" placeholder="inserisci mail">
             <button type="button" id="buttonVerify">Verifica</button>
         </form>
 
         <div>
-            <div id="mailList">
-                
+            <div class="adminSection">
+                <h2>Aggiungi mail all'elenco:</h2>
+                <div id="mailList">
+                    
+                </div>
+                <form action="/" class="formVerify">
+                    <input type="email" id="addMailInput" placeholder="Nuova Mail">
+                    <button type="button" id="addMailConferm">Aggiungi mail</button>
+                </form>
+
             </div>
-            <form action="/">
-                <input type="email" id="addMailInput">
-                <button type="button" id="addMailConferm">Aggiungi mail</button>
-            </form>
             <div id="mailVerifyScreen" class="hidden">
-                <button id="mailVerifyClose">x</button>
+                <button id="mailVerifyClose"><i class="fa-solid fa-xmark"></i></button>
                 <div id="mailVerifyContent"></div>
             </div>
         </div>

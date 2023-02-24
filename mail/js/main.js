@@ -48,10 +48,14 @@ buttonVerify.addEventListener('click',
         if (join === true){
             console.log('utente presente');
             resultContent.innerHTML = ("UTENTE VERIFICATO");
+            resultContent.classList.add('correct');
+            resultContent.classList.remove('incorrect');
         }
         else{
             console.log('utente assente');
             resultContent.innerHTML = ("UNTENTE SCONOSCIUTO");
+            resultContent.classList.add('incorrect');
+            resultContent.classList.remove('correct');
         }
     }
 )
@@ -74,11 +78,14 @@ addMailConferm.addEventListener('click',
             listElement.innerHTML = (addMailInput.value);
             listElement.classList.add('mail');  
             resultContent.innerHTML = ("AGGIUNTO CON SUCCESSO");
- 
+            resultContent.classList.add('correct');
+            resultContent.classList.remove('incorrect');
         }
         else{
             console.log('email non valida')
             resultContent.innerHTML = ("INDIRIZZO NON VALIDO");
+            resultContent.classList.add('incorrect');
+            resultContent.classList.remove('correct');
         }
     }
 )
