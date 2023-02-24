@@ -7,14 +7,18 @@
     <title>Document</title>
 
     <!-- IMPORTAZIONE FONT  -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
     <!-- IMPORTAZIONE MY CSS  -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     
-    <div>
+    <div id="intoccabile" class="hidden"></div>
+
+    <div class="appContainer">
         <form action="/" method="post">
             <input type="email" id="mailUser">
             <button type="button" id="buttonVerify">Verifica</button>
@@ -28,6 +32,10 @@
                 <input type="email" id="addMailInput">
                 <button type="button" id="addMailConferm">Aggiungi mail</button>
             </form>
+            <div id="mailVerifyScreen" class="hidden">
+                <button id="mailVerifyClose">x</button>
+                <div id="mailVerifyContent"></div>
+            </div>
         </div>
     </div>
 
