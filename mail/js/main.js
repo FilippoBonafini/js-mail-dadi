@@ -23,7 +23,7 @@ buttonVerify.addEventListener('click',
 
         for(let i=0; i < mailSystem.length; i++){
             if(mailUser === mailSystem[i]){
-                console.log(i);
+                console.log('Utente trovato, puoi accedere!');
 
                 // CONCLUDO IL CICLO 
                 i = mailSystem.length;
