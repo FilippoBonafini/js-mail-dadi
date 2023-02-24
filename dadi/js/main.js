@@ -18,18 +18,15 @@ buttonStart.addEventListener('click',
 
         // VEDIAMO CHI VINCE 
         if (randomNumberCpu > randomNumberUser){
-            winner='Computer';
-            console.log ('vince il computer');
+            winner='computer';
         }
         else if (randomNumberCpu < randomNumberUser){
-            winner='Player';
-            console.log('vince il giocatore');
+            winner='player';
         }
         else{
-            winner='Draw';
-            console.log('pareggio');
+            winner='draw';
         }
 
-        console.log(winner);
+        console.log('vincitore: '+winner);
     }
 )
