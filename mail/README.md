@@ -9,7 +9,7 @@
 ## Esecuzione:
 1. Definiamo un array contenente vari indirizzi email;
 2. Creaiamo un campo di input dove l'utente andrà a scrivere la propria email;
-3. Andiamo a verificare SE la mail inserita dall'utente sia contenuta all'interno del nostro array;
+3. Andiamo a verificare SE la mail inserita dall'utente sia contenuta all'interno del nostro array (utilizzando il ciclo for);
 4. Se la condizione è vera scriviamo un messaggio di conferma;
 5. Altrimenti scriviamo un messaggio di errore.
 
