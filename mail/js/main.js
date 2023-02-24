@@ -21,19 +21,20 @@ buttonVerify.addEventListener('click',
         // PRENDIAMO IL VALORE INSERITO DALL'UTENTE
         const mailUser = document.getElementById('mailUser').value;
 
+        // IMPOSTIAMO UNA VARIABILE BOOLEANA
+        let join = false;
+
         for(let i=0; i < mailSystem.length; i++){
             if(mailUser === mailSystem[i]){
-                console.log('Utente trovato, puoi accedere!');
-
-                // CONCLUDO IL CICLO 
-                i = mailSystem.length;
+                join = true;
             }
-            else{
-                console.log('nessun risultato')
+        }   
 
-                // CONCLUDO IL CICLO 
-                i = mailSystem.length;
-            }
+        if (join === true){
+            console.log('utente presente');
+        }
+        else{
+            console.log('utente assente');
         }
     }
 )
