@@ -24,12 +24,14 @@ buttonVerify.addEventListener('click',
         // IMPOSTIAMO UNA VARIABILE BOOLEANA
         let join = false;
 
+        // VERIFICHIAMO SE L'UTENTE E' PRESENTE
         for(let i=0; i < mailSystem.length; i++){
             if(mailUser === mailSystem[i]){
                 join = true;
             }
         }   
 
+        // SCRIVIAMO A SCHERMO IL RISULTATO
         if (join === true){
             console.log('utente presente');
         }
