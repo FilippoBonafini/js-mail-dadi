@@ -174,9 +174,11 @@ buttonStart.addEventListener('click',
         if(name1 === 'god' && name2 === 'god'){
             dadiVerifyScreen.classList.remove('hidden');
             intoccabile.classList.remove('hidden');
-            screenContent.innerHTML = ('Battaglia tra dei... Potrebbero volerci secoli')
+            screenContent.innerHTML = ('Battaglia tra dei... Potrebbero volerci secoli');
+            screenContentGod.classList.add('hidden');
         }
         else if(name1 === 'god'){
+            screenContentGod.classList.remove('hidden');
             scoreP1++;
             scorePlayer1Destination.innerHTML = scoreP1;
             container.classList.add('winnerP1');
@@ -192,6 +194,7 @@ buttonStart.addEventListener('click',
             }
         }
         else if(name2 === 'god'){
+            screenContentGod.classList.remove('hidden');
             scoreP2++;
             scorePlayer2Destination.innerHTML = scoreP2;
             container.classList.add('winnerP2');
@@ -207,6 +210,7 @@ buttonStart.addEventListener('click',
             }
         }
         else if (randomNumberCpu > randomNumberUser){
+            screenContentGod.classList.remove('hidden');
             winner='computer';
             scoreP2++;
             scorePlayer2Destination.innerHTML = scoreP2;
@@ -223,6 +227,7 @@ buttonStart.addEventListener('click',
             }
         }
         else if (randomNumberCpu < randomNumberUser){
+            screenContentGod.classList.remove('hidden');
             winner='player';
             scoreP1++;
             scorePlayer1Destination.innerHTML = scoreP1;

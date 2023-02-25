@@ -59,7 +59,9 @@ body{
 }
 
 #dadiVerifyScreen.hidden,
-#intoccabile.hidden{
+#intoccabile.hidden,
+#screenContentGod.hidden{
+    
 
     display: none;
 }
