@@ -7,23 +7,75 @@
     <title>Document</title>
 
     <!-- IMPORTAZIONE FONT  -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- IMPORTAZIONE MY CSS  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- IMPORTAZIONE FA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
+
+    <div id="intoccabile" class="hidden"></div>
     
     <div class="container">
 
-        <div>
-            <div id="myNumber"></div>
-            <div id="pcNumber"></div>
+        <div id="resultContainer">
+            <div id="myNumber">
+                <form action="/" class="form">
+                    <input type="text" id="name1" class="formInput" placeholder="Player 1">
+                    <button type="button" id="buttonNameP1"><i class="fa-solid fa-pen"></i></button>
+                </form>
+                <div class="dado">
+                    <img src="img/dado1.svg" alt="" class="dado1a">
+                    <img src="img/dado2.svg" alt="" class="dado2a">
+                    <img src="img/dado3.svg" alt="" class="dado3a">
+                    <img src="img/dado4.svg" alt="" class="dado4a">
+                    <img src="img/dado5.svg" alt="" class="dado5a">
+                    <img src="img/dado6.svg" alt="" class="dado6a">
+                </div>
+            </div>
+            <div id="pcNumber">
+                <form action="/" class="form" >
+                    <input type="text" id="name2" class="formInput" placeholder="Player 2">
+                    <button type="button" id="buttonNameP2"><i class="fa-solid fa-pen"></i></button>
+                </form>
+                <div class="dado">
+                    <img src="img/dado1.svg" alt="" class="dado1b">
+                    <img src="img/dado2.svg" alt="" class="dado2b">
+                    <img src="img/dado3.svg" alt="" class="dado3b">
+                    <img src="img/dado4.svg" alt="" class="dado4b">
+                    <img src="img/dado5.svg" alt="" class="dado5b">
+                    <img src="img/dado6.svg" alt="" class="dado6b">
+                </div>
+            </div>
+
+            <div class="score">
+                <div>
+                    <div id="namePlayer1">Player 1:</div>
+                    <div id="scorePlayer1">0</div>
+                </div>
+        
+                <div>
+                    <div id="namePlayer2">Player 2:</div>
+                    <div id="scorePlayer2">0</div>
+                </div>
+            </div>
         </div>
 
+
+
         <form action="/">
-            <button type="button" id="start">Lancia i dadi</button>
+            <button type="button" id="start"><i class="fa-solid fa-dice"></i></button>
         </form>
+
+        <div id="dadiVerifyScreen" class="hidden">
+            <button id="mailVerifyClose"><i class="fa-solid fa-xmark"></i></button>
+
+        </div>
     </div>
 
     <!-- IMPORTAZIONE MY-JS  -->
