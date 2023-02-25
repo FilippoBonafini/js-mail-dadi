@@ -183,7 +183,7 @@ buttonStart.addEventListener('click',
             if(scoreP1 >=  maxScore){
                 dadiVerifyScreen.classList.remove('hidden');
                 intoccabile.classList.remove('hidden');
-                screenContent.innerHTML = ('Player 1 vince!')
+                screenContent.innerHTML = (name1+' vince!')
                 screenContentGod.innerHTML = (name2 +' prova col nome "god" :P')
                 scoreP2 = 0
                 scoreP1 = 0
@@ -198,7 +198,7 @@ buttonStart.addEventListener('click',
             if(scoreP2 >= maxScore){
                 dadiVerifyScreen.classList.remove('hidden');
                 intoccabile.classList.remove('hidden');
-                screenContent.innerHTML = ('Player 2 vince!')
+                screenContent.innerHTML = (name2+' vince!')
                 screenContentGod.innerHTML = (name1 +' prova col nome "god" :P')
                 scoreP2 = 0
                 scoreP1 = 0
@@ -214,7 +214,7 @@ buttonStart.addEventListener('click',
             if(scoreP2 >= maxScore){
                 dadiVerifyScreen.classList.remove('hidden');
                 intoccabile.classList.remove('hidden');
-                screenContent.innerHTML = ('Player 2 vince!')
+                screenContent.innerHTML = (name2 +' vince!')
                 screenContentGod.innerHTML = (name1 +' prova col nome "god" :P')
                 scoreP2 = 0
                 scoreP1 = 0
@@ -230,7 +230,7 @@ buttonStart.addEventListener('click',
             if(scoreP1 >=  maxScore){
                 dadiVerifyScreen.classList.remove('hidden');
                 intoccabile.classList.remove('hidden');
-                screenContent.innerHTML = ('Player 1 vince!')
+                screenContent.innerHTML = (name1+' vince!')
                 screenContentGod.innerHTML = (name2 +' prova col nome "god" :P')
                 scoreP2 = 0
                 scoreP1 = 0

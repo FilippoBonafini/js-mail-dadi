@@ -5,7 +5,19 @@ const mailSystem = [
     "filippo@gmail.com",
     "luca@gmail.com", 
     "marco@gmail.com", 
-    "francesco@gmail.com"
+    "francesco@gmail.com",
+    "roberto@gmail.com",
+    "massimo@gmail.com",
+    "luigi@gmail.com",
+    "alessandro@gmail.com",
+    "piero@gmail.com",
+    "michelangelo@gmail.com",
+    "gaetano@gmail.com",
+    "marietto@gmail.com",
+    "peppe@gmail.com",
+    "lodovico@gmail.com",
+    "pierpaolo@gmail.com",
+    "manuxo@gmail.com"
 ];
 
 // DEFINIAMO IL PULSANTE CHE SCATENERA' L'AZIONE
