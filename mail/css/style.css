@@ -38,6 +38,7 @@ body{
     height: 300px ;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-size: 50px;
@@ -51,7 +52,8 @@ body{
 }
 
 #mailVerifyScreen.hidden,
-#intoccabile.hidden{
+#intoccabile.hidden,
+#mailVerifyScreen .hidden{
     display: none;
 }
 
@@ -157,4 +159,16 @@ h2{
     .appContainer{
         margin-top: 10px;
     }
+}
+
+#mailVerifyScreen .buttonOk{
+    color: rgb(28, 28, 28);
+    width: 100%;
+    padding:10px;
+    font-size: 30px;
+    border-radius: 40px;
+    border: none;
+    background-color:rgb(138, 255, 122); ;
+    cursor: pointer;
+    text-decoration: none;
 }

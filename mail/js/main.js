@@ -25,6 +25,8 @@ const windowResult = document.getElementById('mailVerifyScreen');
 const overlay = document.getElementById('intoccabile');
 // DEFINIAMO IL CONTENUTO DELLA SCHERMATA 
 const resultContent = document.getElementById('mailVerifyContent');
+// DEFINIAMO IL BOTTONE PER PROCEDERE
+const buttonOk = document.querySelector('#mailVerifyScreen .buttonOk');
 
 // IMPOSTIAMO CHE AL CLICK DEL BOTTONE SI SCATENINO AZIONI 
 buttonVerify.addEventListener('click',
@@ -50,6 +52,7 @@ buttonVerify.addEventListener('click',
             resultContent.innerHTML = ("UTENTE VERIFICATO");
             resultContent.classList.add('correct');
             resultContent.classList.remove('incorrect');
+            buttonOk.classList.remove('hidden')
         }
         else{
             console.log('utente assente');
