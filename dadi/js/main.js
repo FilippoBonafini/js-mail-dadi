@@ -152,13 +152,13 @@ buttonStart.addEventListener('click',
         name1 = (namePlayer1).value;
         // FACCIAMO COMPARIRE I DADI GIUSTI
         if(name1 === 'god'){            
-            document.querySelector('.dado6a').classList.add('selected');    
+            document.querySelector('.dado7a').classList.add('selected');    
         }else{
             document.querySelector('.dado'+randomNumberUser+'a').classList.add('selected');
         }
 
         if(name2 === 'god'){            
-            document.querySelector('.dado6b').classList.add('selected');    
+            document.querySelector('.dado7b').classList.add('selected');    
         }else{
             document.querySelector('.dado'+randomNumberCpu+'b').classList.add('selected');        
         }
