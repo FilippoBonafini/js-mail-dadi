@@ -57,6 +57,10 @@ buttonRound1.addEventListener('click',
         buttonRound3.classList.remove("selected");
         buttonRound4.classList.remove("selected");
         maxScore = 1;
+        scoreP1 = 0;
+        scoreP2 = 0;
+        scorePlayer1Destination.innerHTML = scoreP1;
+        scorePlayer2Destination.innerHTML = scoreP2;
     }
 )
 buttonRound2.addEventListener('click',
@@ -66,6 +70,10 @@ buttonRound2.addEventListener('click',
         buttonRound3.classList.remove("selected");
         buttonRound4.classList.remove("selected");
         maxScore = 3;
+        scoreP1 = 0;
+        scoreP2 = 0;
+        scorePlayer1Destination.innerHTML = scoreP1;
+        scorePlayer2Destination.innerHTML = scoreP2;
     }
 )
 buttonRound3.addEventListener('click',
@@ -75,6 +83,10 @@ buttonRound3.addEventListener('click',
         buttonRound3.classList.add("selected");
         buttonRound4.classList.remove("selected");
         maxScore = 5;
+        scoreP1 = 0;
+        scoreP2 = 0;
+        scorePlayer1Destination.innerHTML = scoreP1;
+        scorePlayer2Destination.innerHTML = scoreP2;
     }
 )
 buttonRound4.addEventListener('click',
@@ -84,6 +96,10 @@ buttonRound4.addEventListener('click',
         buttonRound3.classList.remove("selected");
         buttonRound4.classList.add("selected");
         maxScore = 10;
+        scoreP1 = 0;
+        scoreP2 = 0;
+        scorePlayer1Destination.innerHTML = scoreP1;
+        scorePlayer2Destination.innerHTML = scoreP2;
     }
 )
 
