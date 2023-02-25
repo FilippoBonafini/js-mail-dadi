@@ -16,7 +16,7 @@ body{
     gap: 5vw;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 70px
 }
 
 #intoccabile{
@@ -152,5 +152,8 @@ h2{
     .formVerify,
     .adminSection{
         width: 90vw;
+    }
+    .appContainer{
+        margin-top: 10px;
     }
 }
