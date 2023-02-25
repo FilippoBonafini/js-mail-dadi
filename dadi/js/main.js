@@ -133,7 +133,7 @@ buttonStart.addEventListener('click',
     function(){
 
         // RESETTIAMO I DADI 
-        for(let i = 1; i<7; i++){
+        for(let i = 1; i<8; i++){
             document.querySelector('.dado'+i+'a').classList.remove('selected');
             document.querySelector('.dado'+i+'b').classList.remove('selected');
         }
