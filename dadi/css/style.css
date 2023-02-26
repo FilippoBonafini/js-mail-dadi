@@ -224,3 +224,24 @@ body{
     -webkit-box-shadow: 0px 0px 15px 7px #FFF903; 
     box-shadow: 0px 0px 15px 7px #FFF903;
 }
+
+@media screen and (max-width:1300px) {
+    .roundContainer{
+        flex-direction: row;
+        top: 20px;
+        left: 40px;
+        width: auto;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .roundContainer button{
+        padding: 10px;
+        height: auto;
+    }
+    #resultContainer #pcNumber{
+        margin-left: 0;
+    }
+    #resultContainer #myNumber{
+        margin-right: 0;
+    }
+}
